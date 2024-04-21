@@ -26,13 +26,13 @@ pipeline {
 
 		stage('Push') {
 			steps {
-				sh 'docker push whatxd/face-swap:${BUILD_NUMBER}'
+				sh 'docker push whatxd/face-swap:${BUILD_NUMBER} whatxd/face-swap:latest'
 			}
 		}
 
 		stage('Delete') {
 			steps {
-				sh 'docker rmi whatxd/face-swap:${BUILD_NUMBER}'
+				sh 'docker rmi whatxd/face-swap:${BUILD_NUMBER} whatxd/face-swap:latest'
 			}
 		}
 	}
