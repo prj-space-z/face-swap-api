@@ -1,4 +1,6 @@
 .assets
 .idea
 .vscode
-.temp
+.temp/*.jpg
+.temp/*.webp
+.temp/*.png
